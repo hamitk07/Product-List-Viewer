@@ -11,6 +11,7 @@ class ProductTextFieldPrice extends StatelessWidget {
     final controller = Get.put(ProductController());
 
     return TextField(
+      controller: controller.textControllerPrice(),
       onChanged: (value) => controller.productPrice(double.parse(value)),
       decoration: InputDecoration(
         label: Text("Price"),

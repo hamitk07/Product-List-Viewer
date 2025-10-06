@@ -19,6 +19,10 @@ class ProductButtonAdd extends StatelessWidget {
             controller.productName.toString(),
             controller.productPrice.toDouble(),
           );
+          controller.textControllerName().clear();
+          controller.textControllerPrice().clear();
+          controller.productName.value = "empty";
+          controller.productPrice.value = 0;
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.blue,

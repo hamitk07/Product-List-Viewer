@@ -8,7 +8,7 @@ class ProductTextPrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Product Price: ${product.price}",
+      "Product Price: ${product.price}\$",
       style: TextStyle(fontSize: 15),
     );
   }

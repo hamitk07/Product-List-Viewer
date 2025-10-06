@@ -11,7 +11,8 @@ class ProductTextFieldName extends StatelessWidget {
     final controller = Get.put(ProductController());
 
     return TextField(
-      onChanged: (value) => controller.updateName(value),
+      controller: controller.textControllerName(),
+      onChanged: (value) => {controller.updateName(value)},
       decoration: InputDecoration(
         label: Text("Name"),
         border: OutlineInputBorder(),

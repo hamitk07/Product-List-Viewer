@@ -1,3 +1,4 @@
+import "package:flutter/widgets.dart";
 import "package:get/get.dart";
 import "../../data/models/product_model.dart";
 
@@ -6,6 +7,8 @@ class ProductController extends GetxController {
   var isProductsReady = false.obs;
   var productName = "empty".obs;
   var productPrice = 0.0.obs;
+  var textControllerName = TextEditingController().obs;
+  var textControllerPrice = TextEditingController().obs;
 
   @override
   void onInit() {
@@ -16,7 +19,6 @@ class ProductController extends GetxController {
 
   Future<void> fetchData() async {
     await Future.delayed(Duration(seconds: 2));
-    products.addAll([ProductModel(name: "product1", price: 10)]);
     isProductsReady.value = true;
   }
 
