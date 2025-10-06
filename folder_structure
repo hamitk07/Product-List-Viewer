@@ -1,0 +1,31 @@
+    lib/
+    ├── core/                  # Tüm uygulamada ortak kullanılan yapılar
+    │    ├── constants/        # Sabit değerler (renk, text, url vs)
+    │    ├── theme/            # Tema, stil ayarları
+    │    ├── utils/            # Yardımcı fonksiyonlar
+    │    ├── widgets/          # Ortak widgetlar (custom button, loader)
+    │    └── services/         # Ortak servisler (api, local storage)
+    │
+    ├── features/
+    │    ├── auth/
+    │    │    ├── data/        # Model, repository
+    │    │    ├── logic/       # Provider, Bloc, Controller, ViewModel (State)
+    │    │    └── presentation/ # UI tarafı (ekranlar, widgetlar)
+    │    │         ├── pages/
+    │    │         └── widgets/
+    │    │
+    │    ├── home/
+    │    │    ├── data/
+    │    │    ├── logic/
+    │    │    └── presentation/
+    │    │         ├── pages/
+    │    │         └── widgets/
+    │    │
+    │    └── profile/
+    │         ├── data/
+    │         ├── logic/
+    │         └── presentation/
+    │              ├── pages/
+    │              └── widgets/
+    │
+    └── main.dart
